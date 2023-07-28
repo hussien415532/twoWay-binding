@@ -1,0 +1,3 @@
+<label for="">Child</label>
+<input type="text" [value]="data" (input)="dataChange.emit(ref.value)" #ref>
+<p>data from parent {{data}}</p>

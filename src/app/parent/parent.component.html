@@ -1,0 +1,6 @@
+<div class="container m-5">
+  <label for="">Parent :</label>
+  <input type="text" #ref (input)="data=ref.value" [value]="data">
+  <p>data from Child {{data}}</p>
+  <app-child [(data)]="data" ></app-child>
+</div>
